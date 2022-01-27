@@ -1,0 +1,53 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.NativeAABB = exports.NativePipelineSharedSceneData = exports.NativeRoot = exports.NativeSubModel = exports.NativePass = exports.NativeDrawBatch2D = exports.NativeRenderScene = exports.NativeRenderWindow = exports.NativeCamera = exports.NativeOctree = exports.NativeShadow = exports.NativeAmbient = exports.NativeFog = exports.NaitveSkybox = exports.NativeSphereLight = exports.NativeSpotLight = exports.NativeDirectionalLight = exports.NativeLight = exports.NativeBakedSkinningModel = exports.NativeSkinningModel = exports.NativeModel = exports.NativeScene = exports.NativeNode = void 0;
+// scene
+const NativeNode = ns.Node;
+exports.NativeNode = NativeNode;
+const NativeScene = ns.Scene;
+exports.NativeScene = NativeScene;
+const NativeModel = ns.Model;
+exports.NativeModel = NativeModel;
+const NativeSkinningModel = ns.SkinningModel;
+exports.NativeSkinningModel = NativeSkinningModel;
+const NativeBakedSkinningModel = ns.BakedSkinningModel;
+exports.NativeBakedSkinningModel = NativeBakedSkinningModel;
+const NativeLight = ns.light;
+exports.NativeLight = NativeLight;
+const NativeDirectionalLight = ns.DirectionalLight;
+exports.NativeDirectionalLight = NativeDirectionalLight;
+const NativeSpotLight = ns.SpotLight;
+exports.NativeSpotLight = NativeSpotLight;
+const NativeSphereLight = ns.SphereLight;
+exports.NativeSphereLight = NativeSphereLight;
+const NaitveSkybox = ns.Skybox;
+exports.NaitveSkybox = NaitveSkybox;
+const NativeFog = ns.Fog;
+exports.NativeFog = NativeFog;
+const NativeAmbient = ns.Ambient;
+exports.NativeAmbient = NativeAmbient;
+const NativeShadow = ns.Shadow;
+exports.NativeShadow = NativeShadow;
+const NativeOctree = ns.OctreeInfo;
+exports.NativeOctree = NativeOctree;
+const NativeCamera = ns.Camera;
+exports.NativeCamera = NativeCamera;
+const NativeRenderWindow = ns.RenderWindow;
+exports.NativeRenderWindow = NativeRenderWindow;
+const NativeRenderScene = ns.RenderScene;
+exports.NativeRenderScene = NativeRenderScene;
+const NativeDrawBatch2D = ns.DrawBatch2D;
+exports.NativeDrawBatch2D = NativeDrawBatch2D;
+const NativePass = ns.Pass;
+exports.NativePass = NativePass;
+const NativeSubModel = ns.SubModel;
+exports.NativeSubModel = NativeSubModel;
+const NativeRoot = ns.Root;
+exports.NativeRoot = NativeRoot;
+const NativePipelineSharedSceneData = ns.PipelineSharedSceneData;
+exports.NativePipelineSharedSceneData = NativePipelineSharedSceneData;
+const NativeAABB = ns.AABB;
+exports.NativeAABB = NativeAABB;

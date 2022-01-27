@@ -1,0 +1,111 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.BulletBoxShape = void 0;
+
+var _bulletShape = require("./bullet-shape.js");
+
+var _physicsFramework = require("../../../../exports/physics-framework.js");
+
+var _util = require("../../utils/util.js");
+
+var _bulletUtils = require("../bullet-utils.js");
+
+var _bulletCache = require("../bullet-cache.js");
+
+var _instantiated = require("../instantiated.js");
+
+/* eslint-disable new-cap */
+
+/*
+ Copyright (c) 2020 Xiamen Yaji Software Co., Ltd.
+
+ https://www.cocos.com/
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated engine source code (the "Software"), a limited,
+ worldwide, royalty-free, non-assignable, revocable and non-exclusive license
+ to use Cocos Creator solely to develop games on your target platforms. You shall
+ not use Cocos Creator software for developing other software or tools that's
+ used for developing games. You are not granted to publish, distribute,
+ sublicense, and/or sell copies of Cocos Creator.
+
+ The software or tools in this License Agreement are licensed, not sold.
+ Xiamen Yaji Software Co., Ltd. reserves all rights not expressly granted to you.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ */
+
+/**
+ * @packageDocumentation
+ * @hidden
+ */
+class BulletBoxShape extends _bulletShape.BulletShape {
+  updateSize() {
+    const hf = _bulletCache.BulletCache.instance.BT_V3_0;
+    (0, _bulletUtils.cocos2BulletVec3)(hf, this.getMinUnscaledHalfExtents(_util.VEC3_0));
+
+    _instantiated.bt.BoxShape_setUnscaledHalfExtents(this.impl, hf);
+
+    this.updateCompoundTransform();
+  }
+
+  get collider() {
+    return this._collider;
+  }
+
+  onComponentSet() {
+    const hf = _bulletCache.BulletCache.instance.BT_V3_0;
+    (0, _bulletUtils.cocos2BulletVec3)(hf, this.getMinUnscaledHalfExtents(_util.VEC3_0));
+    this._impl = _instantiated.bt.BoxShape_new(hf);
+    this.updateScale();
+  }
+
+  updateScale() {
+    super.updateScale();
+    const bt_v3 = _bulletCache.BulletCache.instance.BT_V3_0;
+
+    _instantiated.bt.CollisionShape_setLocalScaling(this._impl, (0, _bulletUtils.cocos2BulletVec3)(bt_v3, this.getMinScale(_util.VEC3_0)));
+
+    this.updateCompoundTransform();
+  }
+
+  getMinUnscaledHalfExtents(out) {
+    const size = this.collider.size;
+    const ws = (0, _util.absolute)(_util.VEC3_0.set(this._collider.node.worldScale));
+    const minVolumeSize = _physicsFramework.PhysicsSystem.instance.minVolumeSize;
+    const halfSizeX = size.x / 2;
+    const halfSizeY = size.y / 2;
+    const halfSizeZ = size.z / 2;
+    const halfX = halfSizeX * ws.x < minVolumeSize ? minVolumeSize / ws.x : halfSizeX;
+    const halfY = halfSizeY * ws.y < minVolumeSize ? minVolumeSize / ws.y : halfSizeY;
+    const halfZ = halfSizeZ * ws.z < minVolumeSize ? minVolumeSize / ws.z : halfSizeZ;
+    out.set(halfX, halfY, halfZ);
+    return out;
+  }
+
+  getMinScale(out) {
+    const size = this.collider.size;
+    const ws = (0, _util.absolute)(_util.VEC3_0.set(this._collider.node.worldScale));
+    const minVolumeSize = _physicsFramework.PhysicsSystem.instance.minVolumeSize;
+    const halfSizeX = size.x / 2;
+    const halfSizeY = size.y / 2;
+    const halfSizeZ = size.z / 2;
+    const scaleX = halfSizeX * ws.x < minVolumeSize ? minVolumeSize / halfSizeX : ws.x;
+    const scaleY = halfSizeY * ws.y < minVolumeSize ? minVolumeSize / halfSizeY : ws.y;
+    const scaleZ = halfSizeZ * ws.z < minVolumeSize ? minVolumeSize / halfSizeZ : ws.z;
+    out.set(scaleX, scaleY, scaleZ);
+    return out;
+  }
+
+}
+
+exports.BulletBoxShape = BulletBoxShape;

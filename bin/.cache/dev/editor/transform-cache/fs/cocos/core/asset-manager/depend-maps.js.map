@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///Users/disstian/Documents/CreatorProjects/engine3.3.0/cocos/core/asset-manager/depend-maps.ts"],"names":["dependMap","WeakMap","nativeDependMap","WeakSet","onLoadedInvokedMap"],"mappings":";;;;;;AAGO,MAAMA,SAAwC,GAAG,IAAIC,OAAJ,EAAjD;;AAEA,MAAMC,eAA+B,GAAG,IAAIC,OAAJ,EAAxC;;AAEA,MAAMC,kBAAkC,GAAG,IAAID,OAAJ,EAA3C"}

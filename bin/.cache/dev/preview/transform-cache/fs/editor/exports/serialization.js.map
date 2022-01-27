@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../../editor/exports/serialization.ts"],"names":["CCON","encodeCCONJson","encodeCCONBinary","BufferBuilder","decodeCCONBinary","parseCCONJson"],"mappings":";;;;;;mCAEIA,I;6CACAC,c;+CACAC,gB;4CACAC,a;+CACAC,gB;4CACAC"}

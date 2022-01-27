@@ -1,0 +1,581 @@
+{
+  "exports": {
+    "base": "base.js",
+    "gfx-webgl": "gfx-webgl.js",
+    "gfx-webgl2": "gfx-webgl2.js",
+    "3d": "3d.js",
+    "2d": "2d.js",
+    "ui": "ui.js",
+    "particle": "particle.js",
+    "particle-2d": "particle-2d.js",
+    "physics-framework": "physics-framework.js",
+    "physics-cannon": "physics-cannon.js",
+    "physics-physx": "physics-physx.js",
+    "physics-ammo": "physics-ammo.js",
+    "wait-for-ammo-instantiation": "wait-for-ammo-instantiation.js",
+    "physics-builtin": "physics-builtin.js",
+    "physics-2d-framework": "physics-2d-framework.js",
+    "physics-2d-box2d": "physics-2d-box2d.js",
+    "physics-2d-builtin": "physics-2d-builtin.js",
+    "intersection-2d": "intersection-2d.js",
+    "primitive": "primitive.js",
+    "profiler": "profiler.js",
+    "audio": "audio.js",
+    "video": "video.js",
+    "terrain": "terrain.js",
+    "webview": "webview.js",
+    "tween": "tween.js",
+    "tiled-map": "tiled-map.js",
+    "spine": "spine.js",
+    "dragon-bones": "dragon-bones.js",
+    "split:/physx.release.asm.js": "assets/physx.release.asm-a22afa06.js"
+  },
+  "hasCriticalWarns": false,
+  "dependencyGraph": {
+    "base.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js"
+    ],
+    "gfx-webgl.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js"
+    ],
+    "gfx-webgl2.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js"
+    ],
+    "3d.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "index-b755abba.js",
+      "create-mesh-a2b1066e.js",
+      "mesh-12590811.js",
+      "mesh-renderer-f61cfd03.js",
+      "skeleton-5498f045.js"
+    ],
+    "2d.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "index-912d4289.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js",
+      "deprecated-f955a6ea.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "ui.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "particle.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "index-b755abba.js",
+      "create-mesh-a2b1066e.js",
+      "mesh-12590811.js",
+      "mesh-renderer-f61cfd03.js",
+      "skeleton-5498f045.js"
+    ],
+    "particle-2d.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "sprite-frame-ace45b09.js",
+      "renderable-2d-0c3bee97.js",
+      "vertex-format-25c59854.js",
+      "deprecated-7a0f85e1.js",
+      "ZipUtils-3ae2be0b.js"
+    ],
+    "physics-framework.js": [
+      "json-asset-7bb011fd.js",
+      "base.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "index-809e7472.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js"
+    ],
+    "physics-cannon.js": [
+      "json-asset-7bb011fd.js",
+      "base.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "index-809e7472.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js",
+      "physics-framework.js",
+      "_commonjsHelpers-19d0a8b5.js"
+    ],
+    "physics-physx.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "index-809e7472.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js",
+      "split:/physx.release.asm.js",
+      "tuple-dictionary-5e20c301.js"
+    ],
+    "physics-ammo.js": [
+      "json-asset-7bb011fd.js",
+      "base.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "index-809e7472.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js",
+      "physics-framework.js",
+      "_commonjsHelpers-19d0a8b5.js",
+      "tuple-dictionary-5e20c301.js",
+      "instantiated-464fe45d.js",
+      "array-collision-matrix-ec6af177.js"
+    ],
+    "wait-for-ammo-instantiation.js": [
+      "json-asset-7bb011fd.js",
+      "base.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "index-809e7472.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js",
+      "physics-framework.js",
+      "_commonjsHelpers-19d0a8b5.js",
+      "instantiated-464fe45d.js"
+    ],
+    "physics-builtin.js": [
+      "json-asset-7bb011fd.js",
+      "base.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "index-809e7472.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js",
+      "physics-framework.js",
+      "array-collision-matrix-ec6af177.js"
+    ],
+    "physics-2d-framework.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "collision-matrix-c53e6e00.js",
+      "polygon-separator-47896431.js",
+      "hinge-joint-2d-f9a650ec.js"
+    ],
+    "physics-2d-box2d.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js",
+      "deprecated-f955a6ea.js",
+      "deprecated-7a0f85e1.js",
+      "collision-matrix-c53e6e00.js",
+      "_commonjsHelpers-19d0a8b5.js",
+      "polygon-separator-47896431.js",
+      "hinge-joint-2d-f9a650ec.js"
+    ],
+    "physics-2d-builtin.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "index-912d4289.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js",
+      "deprecated-f955a6ea.js",
+      "deprecated-7a0f85e1.js",
+      "collision-matrix-c53e6e00.js",
+      "hinge-joint-2d-f9a650ec.js",
+      "intersection-2d-1a9b432b.js"
+    ],
+    "intersection-2d.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "intersection-2d-1a9b432b.js"
+    ],
+    "primitive.js": [
+      "json-asset-7bb011fd.js",
+      "create-mesh-a2b1066e.js",
+      "mesh-12590811.js",
+      "capsule-c827c0f3.js"
+    ],
+    "profiler.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "renderable-component-0ffd84e0.js",
+      "create-mesh-a2b1066e.js",
+      "mesh-12590811.js",
+      "mesh-renderer-f61cfd03.js"
+    ],
+    "audio.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js"
+    ],
+    "video.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "renderable-2d-0c3bee97.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "terrain.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "terrain-asset-0aafabc0.js"
+    ],
+    "webview.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "renderable-2d-0c3bee97.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "tween.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js"
+    ],
+    "tiled-map.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "deprecated-7a0f85e1.js",
+      "ZipUtils-3ae2be0b.js"
+    ],
+    "spine.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js"
+    ],
+    "dragon-bones.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js",
+      "index-912d4289.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js",
+      "deprecated-f955a6ea.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "json-asset-7bb011fd.js": [],
+    "deprecated-229f0693.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js"
+    ],
+    "index-07e0e256.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "transform-utils-ec8404a7.js"
+    ],
+    "renderable-component-0ffd84e0.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js"
+    ],
+    "transform-utils-ec8404a7.js": [
+      "json-asset-7bb011fd.js",
+      "deprecated-229f0693.js"
+    ],
+    "texture-buffer-pool-2b0fe4d4.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "spot-light-44c8b89f.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "index-b755abba.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "transform-utils-ec8404a7.js",
+      "create-mesh-a2b1066e.js",
+      "mesh-12590811.js",
+      "mesh-renderer-f61cfd03.js",
+      "skeleton-5498f045.js"
+    ],
+    "mesh-12590811.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "skeleton-5498f045.js": [
+      "json-asset-7bb011fd.js",
+      "mesh-12590811.js"
+    ],
+    "mesh-renderer-f61cfd03.js": [
+      "json-asset-7bb011fd.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "renderable-component-0ffd84e0.js",
+      "mesh-12590811.js"
+    ],
+    "create-mesh-a2b1066e.js": [
+      "json-asset-7bb011fd.js",
+      "mesh-12590811.js"
+    ],
+    "sprite-57cea86a.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "sprite-frame-ace45b09.js",
+      "renderable-2d-0c3bee97.js"
+    ],
+    "sprite-frame-ace45b09.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "deprecated-7a0f85e1.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "deprecated-229f0693.js",
+      "renderable-2d-0c3bee97.js"
+    ],
+    "renderable-2d-0c3bee97.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js"
+    ],
+    "deprecated-f955a6ea.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "graphics-74958146.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "spot-light-44c8b89f.js",
+      "texture-buffer-pool-2b0fe4d4.js",
+      "renderable-2d-0c3bee97.js",
+      "vertex-format-25c59854.js"
+    ],
+    "vertex-format-25c59854.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "index-912d4289.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "sprite-frame-ace45b09.js",
+      "sprite-57cea86a.js",
+      "renderable-2d-0c3bee97.js",
+      "graphics-74958146.js",
+      "vertex-format-25c59854.js",
+      "deprecated-f955a6ea.js",
+      "deprecated-7a0f85e1.js"
+    ],
+    "ZipUtils-3ae2be0b.js": [],
+    "index-809e7472.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "deprecated-229f0693.js",
+      "renderable-component-0ffd84e0.js",
+      "mesh-12590811.js",
+      "skeleton-5498f045.js",
+      "collision-matrix-c53e6e00.js",
+      "capsule-c827c0f3.js",
+      "terrain-asset-0aafabc0.js"
+    ],
+    "collision-matrix-c53e6e00.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js"
+    ],
+    "terrain-asset-0aafabc0.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "capsule-c827c0f3.js": [
+      "json-asset-7bb011fd.js"
+    ],
+    "_commonjsHelpers-19d0a8b5.js": [],
+    "tuple-dictionary-5e20c301.js": [],
+    "instantiated-464fe45d.js": [
+      "index-809e7472.js",
+      "physics-framework.js",
+      "_commonjsHelpers-19d0a8b5.js"
+    ],
+    "array-collision-matrix-ec6af177.js": [],
+    "hinge-joint-2d-f9a650ec.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js",
+      "deprecated-229f0693.js",
+      "collision-matrix-c53e6e00.js"
+    ],
+    "polygon-separator-47896431.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js"
+    ],
+    "intersection-2d-1a9b432b.js": [
+      "json-asset-7bb011fd.js",
+      "index-07e0e256.js"
+    ]
+  },
+  "md5Map": {
+    "base.js": "4e4e842c5f316dc6e7c449423db42f5c",
+    "gfx-webgl.js": "b6a45dca5ed6866693c0cecd4453090a",
+    "gfx-webgl2.js": "808996bb54cf6a76f9cda3d0308ed790",
+    "3d.js": "2b359661c31d39a51ea2a2143ab168a2",
+    "2d.js": "ade25171c493114c7e08ba067a7cc6e3",
+    "ui.js": "1270166201a29593df5db059da204b46",
+    "particle.js": "1c14e5582c91828c0142c9a95838e4a0",
+    "particle-2d.js": "44b7d4cb300837e66124a18ab6954cf4",
+    "physics-framework.js": "91cee25bb37683c42a67a60ec27be70c",
+    "physics-cannon.js": "0adcfb72605e0fe07e5314bc65f2b564",
+    "physics-physx.js": "14245d988eca105b128ea0345bd9c9ab",
+    "physics-ammo.js": "743ec3c41bebc1c799b8fc8255fec9ce",
+    "wait-for-ammo-instantiation.js": "05779653500c858cc48d347078e26645",
+    "physics-builtin.js": "0e329c07a5c39c8e94be89628fb64e02",
+    "physics-2d-framework.js": "d1b11300df94d51e9601b5c1c625ccde",
+    "physics-2d-box2d.js": "f30b4adaad9e6b857bcd2fa738cc392f",
+    "physics-2d-builtin.js": "07d7e6ee94e8ecfa543ce065e1626ded",
+    "intersection-2d.js": "9b72c906b7aa47f533fd6f64a1b29ab0",
+    "primitive.js": "b4d066df550a3982cee65121dd8f3884",
+    "profiler.js": "a7ac224d794bf5ff56e9a02dc6df54de",
+    "audio.js": "e5a8fcd2cf86397ee57c0a5f161c7575",
+    "video.js": "fa9d60fc38413a91de543c36313abc6a",
+    "terrain.js": "3d185d0a0812f1477972df9136aa08d3",
+    "webview.js": "ee00394e3543228c0d05c2b19cf3ee74",
+    "tween.js": "47704e2f8e0fb6c8bddabd826ae40bc5",
+    "tiled-map.js": "83056f49274781aeba5542873847bb20",
+    "spine.js": "0db4e2c63f160f30095d1ec66890852a",
+    "dragon-bones.js": "65b73d65734cfaa82b5a8b8250c1ea63",
+    "assets/physx.release.asm-a22afa06.js": "9166ad049a5c54d1cb209f4439ceda98"
+  }
+}
